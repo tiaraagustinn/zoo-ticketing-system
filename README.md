@@ -14,6 +14,7 @@ Aplikasi ini merupakan implementasi sistem pembelian dan validasi tiket untuk ke
 Sistem ini dirancang menggunakan prinsip CBSE dengan pendekatan *Design by Contract*, mengandalkan interaksi antar komponen melalui antarmuka (interfaces) yang jelas dan terdefinisi.
 
 ## Struktur Komponen
+![Screenshot 2025-03-11 223318](https://github.com/user-attachments/assets/80144c9c-a443-48fc-aa1a-a82a46f7e825)
 
 Diagram sistem terdiri dari 5 komponen utama dan 4 antarmuka sebagai penghubung antar komponen:
 
@@ -100,7 +101,7 @@ Antarmuka umum untuk tombol yang digunakan oleh pengguna (`PurchaseButton` dan `
 ### Langkah-langkah
 1. Clone repository:
    ```bash
-   git clone https://github.com/your-username/zoo-ticketing-system.git
+   git clone https://github.com/tiaraagustinn/zoo-ticketing-system
    cd zoo-ticketing-system
    ```
 
@@ -154,3 +155,8 @@ Beberapa ide pengembangan lebih lanjut:
 ## Anggota Tim
 - Andika Pebriansyah – 2208107010058
 - Tiara Agustin – 2208107010004
+
+UML:
+![Uploading WhatsApp Image 2025-03-12 at 08.07.14_a6b816c1.jpg…]()
+
+
