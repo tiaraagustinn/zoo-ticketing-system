@@ -157,6 +157,7 @@ Beberapa ide pengembangan lebih lanjut:
 - Tiara Agustin – 2208107010004
 
 UML:
-![Uploading WhatsApp Image 2025-03-12 at 08.07.14_a6b816c1.jpg…]()
+![WhatsApp Image 2025-03-12 at 08 07 14_c8373746](https://github.com/user-attachments/assets/49f601f8-97f9-4a10-a41e-8573fd9597ca)
+
 
 
