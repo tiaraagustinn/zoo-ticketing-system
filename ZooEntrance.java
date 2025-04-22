@@ -2,11 +2,15 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class ZooEntrance implements ValidateInterface, TicketInterface {
+public class ZooEntrance implements ValidateInterface {
     private boolean isOpen = false;
     private final Set<String> validTickets = new HashSet<>();
     private final Set<String> usedTickets = new HashSet<>();
-    private String currentTicket = null;
+    private TicketInterface ticketInterface; // Required interface
+    
+    public ZooEntrance(TicketInterface ticketInterface) {
+        this.ticketInterface = ticketInterface;
+    }
     
     public void turnOn() {
         isOpen = true;
@@ -52,13 +56,13 @@ public class ZooEntrance implements ValidateInterface, TicketInterface {
         }
     }
     
-    @Override
-    public void sendTicketData(String ticketId, String ticketType) {
-        currentTicket = ticketId;
+    // Method to receive ticket data from the ticket interface
+    public String getTicketData() {
+        return ticketInterface.receiveTicketData();
     }
     
-    @Override
-    public String receiveTicketData() {
-        return currentTicket;
+    // Method to send ticket data through the ticket interface
+    public void setTicketData(String ticketId, String ticketType) {
+        ticketInterface.sendTicketData(ticketId, ticketType);
     }
 }

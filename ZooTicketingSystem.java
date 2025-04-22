@@ -8,14 +8,14 @@ public class ZooTicketingSystem {
         
         // Create the components
         TicketBooth ticketBooth = new TicketBooth();
-        ZooEntrance zooEntrance = new ZooEntrance();
+        ZooEntrance zooEntrance = new ZooEntrance(ticketBooth); // Pass ticketBooth as the required TicketInterface
         
         // List untuk menyimpan tiket yang sudah dibuat
         List<String> issuedTickets = new ArrayList<>();
         
         // Create the buttons
         PurchaseButton purchaseButton = new PurchaseButton(ticketBooth);
-        ValidateButton validateButton = new ValidateButton(zooEntrance, zooEntrance, issuedTickets);
+        ValidateButton validateButton = new ValidateButton(zooEntrance, ticketBooth, issuedTickets);
         
         // Turn on the components
         ticketBooth.turnOn();
